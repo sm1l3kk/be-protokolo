@@ -190,9 +190,10 @@ footer {
   color: #f7941e;
 }
 
+  .pimp {
   font-size: 12px;
   color: #ccc;
-}
+  }
 
 @media (max-width: 600px) {
   .footer-contact {
