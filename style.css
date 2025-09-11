@@ -105,7 +105,7 @@ transition: opacity 1s ease-in-out;
   border: none;
   cursor: pointer;
   font-size: 18px;
-=======
+}
 
 footer {
   background-color: #2a2a2a;
@@ -195,7 +195,6 @@ copyright {
   color: #ccc;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .footer-contact {
     flex-direction: column;
