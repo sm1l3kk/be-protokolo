@@ -1,0 +1,300 @@
+
+.header {
+  position: relative;
+}
+
+.carousel {
+position: relative;
+height: 320px;
+overflow: hidden;
+}
+
+.bg-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.bg-image.active {    opacity: 1;}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title h1 {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  height: 64px;
+  width: 32px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.arrow.left {
+  left: 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.arrow.right {
+  right: 0;
+  border-radius: 50px 0 0 50px;
+}
+
+.nav {
+  position: relative;
+  margin-top: -32px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 16px 32px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.search {
+  margin-left: 32px;
+}
+
+.search button {
+  color: white;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+footer {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.contact-item i {
+  font-size: 18px;
+  color: #f7941e; 
+}
+
+.newsletter {
+  margin-bottom: 30px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  width: 250px;
+  max-width: 80vw;
+  font-size: 14px;
+}
+
+.newsletter button {
+  background-color: #f7941e;
+  border: none;
+  padding: 11px 25px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #d77b16;
+}
+
+.social-icons {
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 12px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f7941e;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #ccc;
+}
+
+
+@media (max-width: 600px) {
+  .footer-contact {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.content {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #374151;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.image-container {
+  padding: 32px 0;
+}
+
+.fruit-image {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.buy-button {
+  background-color: #374151;
+  color: white;
+  border: none;
+  padding: 12px 32px; 
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: center;
+}
+
+.buy-button:hover {
+  background-color: #1f2937;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .fruit-image {
+    max-width: 300px;
+  }
+}
