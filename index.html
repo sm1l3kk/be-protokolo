@@ -1,10 +1,57 @@
-got<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body style="font-family: Arial, sans-serif; margin:16px; background:#f7f7f7;">
+ <header class="header">
+      <div class="carousel">
+        <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+        <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+        <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+        <div class="overlay"></div> 
+    </div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.bg-image');
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 7000);
+    </script>
+            <div class="title">
+                <h1>NINOM</h1>
+            </div>
+
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+        </div>
+
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Our Fruit</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Login</a>
+                </div>
+                <div class="search">
+                    <button>🔍</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+ </header>
 </head>
 </ul>
 <footer>
