@@ -106,6 +106,7 @@ transition: opacity 1s ease-in-out;
   cursor: pointer;
   font-size: 18px;
 }
+
 footer {
   background-color: #2a2a2a;
   color: #fff;
@@ -189,11 +190,9 @@ footer {
   color: #f7941e;
 }
 
-.copyright {
   font-size: 12px;
   color: #ccc;
 }
-
 
 @media (max-width: 600px) {
   .footer-contact {
