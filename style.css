@@ -153,8 +153,7 @@ footer {
 .newsletter input[type="email"] {
   padding: 10px 15px;
   border: none;
-  border-radius: 2px 0 0 2px;
-  width: 250px;
+  width: 450px;
   max-width: 80vw;
   font-size: 14px;
 }
@@ -165,9 +164,7 @@ footer {
   padding: 11px 25px;
   font-weight: 600;
   color: #fff;
-  border-radius: 0 2px 2px 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .newsletter button:hover {
@@ -181,13 +178,7 @@ footer {
 .social-icons a {
   color: #fff;
   margin: 0 12px;
-  font-size: 18px;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #f7941e;
 }
 .pimpal{
   font-size: 12px;
@@ -298,3 +289,99 @@ body {
     max-width: 300px;
   }
 }
+
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px; 
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main-content {
+  padding: 32px 0; 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 32px; 
+  align-items: center;
+}
+
+
+.image-section {
+  position: relative;
+  height: 95%;
+}
+
+.shadow-element {
+  position: absolute;
+  bottom: 18px; 
+  right: 16px; 
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.shadow-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fruit-img {
+  width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px; 
+  padding: 0 32px; 
+}
+
+.shape-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px; 
+}
+
+.shape-element {
+  height: 150px; 
+  width: auto;
+}
+
+.title2 {
+  font-size: 48px; 
+  font-weight: bold;
+  color: #111827;
+  text-wrap: balance;
+}
+
+.description {
+  font-size: 18px; 
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 448px; 
+}
+
+.button-container {
+  margin-top: 8px; 
+}
+
+.read-more-btn {
+  background-color: #1f2937;
+  color: white;
+  padding: 12px 32px; 
+  font-size: 16px; 
+  font-weight: 500;
+  border: none;
+  border-radius: 6px; 
+  cursor: pointer;
+}
+
