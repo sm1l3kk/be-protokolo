@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruit Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="carousel">
+            <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+            <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+            <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+            <div class="overlay"></div>
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.bg-image');
+
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            setInterval(showNextImage, 7000);
+        </script>
+        <div class="title">
+            <h1>NINOM</h1>
+        </div>
+
+        <button class="arrow left">‹</button>
+        <button class="arrow right">›</button>
+
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="fruit.html">Our Fruit</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Login</a>
+                </div>
+                <div class="search">
+                    <button>🔍</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fresh-fruit-container">
+
+        <div class="fresh-fruit-title-section">
+            <h1>Fresh Fruit</h1>
+        </div>
+        <div class="fresh-fruit-gallery-grid">
+            <div class="fresh-fruit-card orange-special">
+                <img src="image/Screenshot 2025-09-16 095305.png" alt="Fresh Oranges">
+                <div class="fresh-fruit-hover-overlay">
+                    <h2>Orange</h2>
+                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="fresh-fruit-card">
+                <img src="image/Screenshot 2025-09-16 094656.png" alt="Fresh Blueberries">
+                <div class="fresh-fruit-hover-overlay">
+                    <h2>Blueberry</h2>
+                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="fresh-fruit-card">
+                <img src="image/Screenshot 2025-09-16 094722.png" alt="Fresh Bananas">
+                <div class="fresh-fruit-hover-overlay">
+                    <h2>Banana</h2>
+                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="fresh-fruit-card">
+                <img src="image/Screenshot 2025-09-16 094735.png" alt="Fresh Apples">
+                <div class="fresh-fruit-hover-overlay">
+                    <h2>Apple</h2>
+                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="fresh-fruit-card">
+                <img src="image/Screenshot 2025-09-16 094815.png" alt="Fresh Mangoes">
+                <div class="fresh-fruit-hover-overlay">
+                    <h2>Mango</h2>
+                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="fresh-fruit-card">
+                <img src="image/Screenshot 2025-09-16 094825.png" alt="Fresh Strawberries">
+                <div class="fresh-fruit-hover-overlay">
+                    <h2>Strawberry</h2>
+                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">NINOM</h2>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Passages of Lorem Ipsum available</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+0123 456 7890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>demo@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email" />
+                <button>SUBSCRIBE</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <p class="copyright">
+                2018 All Rights Reserved. Design by Free Html Templates
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

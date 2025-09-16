@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .header {
   position: relative;
@@ -193,11 +198,7 @@ footer {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -266,6 +267,7 @@ body {
   background-color: #1f2937;
 }
 
+
 @media (min-width: 768px) {
   .main-title {
     font-size: 80px;
@@ -289,6 +291,157 @@ body {
     max-width: 300px;
   }
 }
+
+.fresh-fruit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.fresh-fruit-title-section {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: -500px;
+}
+
+.fresh-fruit-title-section::before {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 1px;
+  background-color: #666;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.fresh-fruit-title-section h1 {
+  display: inline-block;
+  font-size: 48px;
+  color: #666;
+  font-weight: 300;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+
+
+.fresh-fruit-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.fresh-fruit-card {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.fresh-fruit-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.fresh-fruit-card:hover img {
+  transform: scale(1.05);
+}
+
+.fresh-fruit-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fresh-fruit-card:hover .fresh-fruit-hover-overlay {
+  opacity: 1;
+}
+
+.fresh-fruit-card.orange-special .fresh-fruit-hover-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.fresh-fruit-hover-overlay h2 {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.fresh-fruit-purchase-btn {
+  padding: 12px 30px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.fresh-fruit-purchase-btn:hover {
+  background: white;
+  color: #333;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .fresh-fruit-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .fresh-fruit-title-section h1 {
+    font-size: 36px;
+  }
+
+  .fresh-fruit-title-section::before {
+    width: 100px;
+    margin-right: 15px;
+  }
+
+  .fresh-fruit-card {
+    height: 250px;
+  }
+
+  .fresh-fruit-hover-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fresh-fruit-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fresh-fruit-title-section h1 {
+    font-size: 28px;
+  }
+
+  .fresh-fruit-title-section::before {
+    width: 80px;
+    margin-right: 10px;
+  }
+}
+=======
 
 .container3 {
   max-width: 1200px;
@@ -384,4 +537,5 @@ body {
   border-radius: 6px; 
   cursor: pointer;
 }
+
 
