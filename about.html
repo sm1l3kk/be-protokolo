@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="header">
+      <div class="carousel">
+        <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+        <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+        <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+        <div class="overlay"></div> 
+    </div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.bg-image');
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextImage, 7000);
+    </script>
+            <div class="title">
+                <h1>NINOM</h1>
+            </div>
+
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+        </div>
+
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="fruit.html">Our Fruit</a>
+                    <a href="#">Testimonial</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Login</a>
+                </div>
+                <div class="search">
+                    <button>🔍</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+ </header>
+    <div class="container3">
+        <div class="main-content">
+            <div class="grid">
+                <div class="image-section">
+                    <div class="shadow-element">
+                        <img src="/image/Rectangle 4.png" alt="" class="shadow-img">
+                    </div>
+                    <img src="/image/luke-michael-1cWZgnBhZRs-unsplash.png" 
+                         alt="Colorful assortment of fresh cut fruits including grapefruits, oranges, pomegranates, and citrus" 
+                         class="fruit-img">
+                </div>
+
+                <div class="content-section">
+                    <div class="shape-container">
+                        <img src="/image/Shape 1.png" alt="" class="shape-element">
+                    </div>
+
+                    <h1 class="title2">About Our Fruit Shop</h1>
+
+                    <p class="description">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                        in some form, by injected humour
+                    </p>
+
+                    <div class="button-container">
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+  <div class="footer-container">
+    <h2 class="footer-logo">NIMOM</h2>
+    <div class="footer-contact">
+      <div class="contact-item">
+        <img src="icons/  (1).png" class="fas fa-map-marker-alt">
+        <span>Passages of Lorem Ipsum available</span>
+      </div>
+      <div class="contact-item">
+        <img src="icons/sa.png" class="fas fa-phone">
+        <span>+0123 456 7890</span>
+      </div>
+      <div class="contact-item">
+        <img src="icons/123.png" class="fas fa-envelope">
+        <span>demo@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <input type="email" class="input" placeholder="Enter your email" />
+      <button>SUBSCRIBE</button>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><img src="icons/facebook-logo-button (1).png" class="fab fa-facebook-f"></a>
+      <a href="#"><img src="icons/twitter-logo-button.png" class="fab fa-twitter"></a>
+      <a href="#"><img src="icons/linkedin (1).png" class="fab fa-linkedin-in"></a>
+      <a href="#"><img src="icons/instagram.png" class="fab fa-instagram"></a>
+    </div>
+
+    <p class="copyright">
+      2018 All Rights Reserved. Design by Free Html Templates
+    </p>
+  </div>
+</footer>
+</body>
+</html>
