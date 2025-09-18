@@ -317,7 +317,6 @@ body {
 .fresh-fruit-title-section h1 {
   display: inline-block;
   font-size: 48px;
-  color: #666;
   font-weight: 300;
   letter-spacing: 2px;
   vertical-align: middle;
@@ -347,10 +346,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-.fresh-fruit-card:hover img {
-  transform: scale(1.05);
-}
-
 .fresh-fruit-hover-overlay {
   position: absolute;
   top: 0;
@@ -364,7 +359,6 @@ body {
   align-items: center;
   color: white;
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .fresh-fruit-card:hover .fresh-fruit-hover-overlay {
@@ -539,3 +533,10 @@ body {
 }
 
 
+.copyright{
+height : 30px;
+text-align: center;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
