@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-      <header class="header">
-    <div class="carousel">
-      <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
-      <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
-      <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
-      <div class="overlay"></div>
-    </div>
-    <script>
-      let currentIndex = 0;
-      const images = document.querySelectorAll('.bg-image');
+    <header class="header">
+        <div class="carousel">
+            <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+            <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+            <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+            <div class="overlay"></div>
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.bg-image');
 
-      function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-      }
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
 
-      setInterval(showNextImage, 7000);
-    </script>
-    <div class="title">
-      <h1>NINOM</h1>
-    </div>
+            setInterval(showNextImage, 7000);
+        </script>
+        <div class="title">
+            <h1>NINOM</h1>
+        </div>
 
-    <button class="arrow left">‹</button>
-    <button class="arrow right">›</button>
-  </header>
-  <nav class="nav">
-    <div class="nav-container">
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="fruit.html">Our Fruit</a>
-        <a href="testimonial.html">Testimonial</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Login</a>
-      </div>
-      <div class="search">
-        <button>🔍</button>
-      </div>
-    </div>
-  </nav>
+        <button class="arrow left">‹</button>
+        <button class="arrow right">›</button>
+    </header>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="fruit.html">Our Fruit</a>
+                <a href="testimonial.html">Testimonial</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="search">
+                <button>🔍</button>
+            </div>
+        </div>
+    </nav>
 
     <div class="testimonial-page-container">
         <div class="testimonial-page-content">
@@ -58,15 +60,17 @@
             <div class="testimonial-section-wrapper">
                 <div class="testimonial-image-container">
                     <button class="testimonial-nav-btn testimonial-left-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <polyline points="15,18 9,12 15,6"></polyline>
                         </svg>
                     </button>
-                    
+
                     <img src="image/image.png" alt="a" class="testimonial-profile-image">
-                    
+
                     <button class="testimonial-nav-btn testimonial-right-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <polyline points="9,18 15,12 9,6"></polyline>
                         </svg>
                     </button>
@@ -77,8 +81,10 @@
                 <div class="testimonial-quote-container">
                     <span class="testimonial-quote-mark testimonial-left-quote">"</span>
                     <p class="testimonial-quote-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut
+                        aliquip ex ea
                         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     </p>
                     <span class="testimonial-quote-mark testimonial-right-quote">"</span>
@@ -86,39 +92,42 @@
             </div>
         </div>
     </div>
-      <footer>
-    <div class="footer-container">
-      <h2 class="footer-logo">NIMOM</h2>
-      <div class="footer-contact">
-        <div class="contact-item">
-          <img src="icons/  (1).png" class="fas fa-map-marker-alt">
-          <span>Passages of Lorem Ipsum available</span>
-        </div>
-        <div class="contact-item">
-          <img src="icons/sa.png" class="fas fa-phone">
-          <span>+0123 456 7890</span>
-        </div>
-        <div class="contact-item">
-          <img src="icons/123.png" class="fas fa-envelope">
-          <span>demo@gmail.com</span>
-        </div>
-      </div>
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">NIMOM</h2>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <img src="icons/  (1).png" class="fas fa-map-marker-alt">
+                    <span>Passages of Lorem Ipsum available</span>
+                </div>
+                <div class="contact-item">
+                    <img src="icons/sa.png" class="fas fa-phone">
+                    <span>+0123 456 7890</span>
+                </div>
+                <div class="contact-item">
+                    <img src="icons/123.png" class="fas fa-envelope">
+                    <span>demo@gmail.com</span>
+                </div>
+            </div>
 
-      <div class="newsletter">
-        <input type="email" class="input" placeholder="Enter your email" />
-        <button>SUBSCRIBE</button>
-      </div>
+            <div class="newsletter-container">
+                <div class="newsletter">
+                    <input type="email" class="input" placeholder="Enter your email" />
+                    <button>SUBSCRIBE</button>
+                </div>
 
-      <div class="social-icons">
-        <a href="#"><img src="icons/facebook-logo-button (1).png" class="fab fa-facebook-f"></a>
-        <a href="#"><img src="icons/twitter-logo-button.png" class="fab fa-twitter"></a>
-        <a href="#"><img src="icons/linkedin (1).png" class="fab fa-linkedin-in"></a>
-        <a href="#"><img src="icons/instagram.png" class="fab fa-instagram"></a>
-      </div>
+                <div class="social-icons">
+                    <a href="#"><img src="icons/facebook-logo-button (1).png" class="fab fa-facebook-f"></a>
+                    <a href="#"><img src="icons/twitter-logo-button.png" class="fab fa-twitter"></a>
+                    <a href="#"><img src="icons/linkedin (1).png" class="fab fa-linkedin-in"></a>
+                    <a href="#"><img src="icons/instagram.png" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        &COPY 2019 All Rights Reserved. Design by Free Html Templates
     </div>
-  </footer>
-  <div class="copyright">
-    &COPY 2019 All Rights Reserved. Design by Free Html Templates
-  </div>
 </body>
+
 </html>
