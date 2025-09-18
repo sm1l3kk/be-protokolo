@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
 </head>
+
 <body style="font-family: Arial, sans-serif; margin:16px; background:#f7f7f7;">
- <header class="header">
-      <div class="carousel">
-        <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
-        <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
-        <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
-        <div class="overlay"></div> 
+  <header class="header">
+    <div class="carousel">
+      <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+      <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+      <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+      <div class="overlay"></div>
     </div>
     <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.bg-image');
+      let currentIndex = 0;
+      const images = document.querySelectorAll('.bg-image');
 
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].classList.add('active');
-        }
+      function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+      }
 
-        setInterval(showNextImage, 7000);
+      setInterval(showNextImage, 7000);
     </script>
-            <div class="title">
-                <h1>NINOM</h1>
-            </div>
-
-            <button class="arrow left">‹</button>
-            <button class="arrow right">›</button>
-        </div>
-
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="fruit.html">Our Fruit</a>
-                    <a href="#">Testimonial</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Login</a>
-                </div>
-                <div class="search">
-                    <button>🔍</button>
-                </div>
-            </div>
-        </nav>
+    <div class="title">
+      <h1>NINOM</h1>
     </div>
- </header>
+
+    <button class="arrow left">‹</button>
+    <button class="arrow right">›</button>
+
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="fruit.html">Our Fruit</a>
+          <a href="#">Testimonial</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Login</a>
+        </div>
+        <div class="search">
+          <button>🔍</button>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main class="container">
-        <div class="content">
-            <h1 class="main-title">FRUIT SHOP</h1>
-            <p class="subtitle">
-                There are many variations of passages of Lorem Ipsum available
-            </p>
-            <div class="image-container">
-                <img 
-                    src="image/apples-805124_1920.png" 
-                    alt="a"
-                    class="fruit-image"
-                >
-            </div>
-            <button class="buy-button">Buy Now</button>
+    <div class="content">
+      <h1 class="main-title">FRUIT SHOP</h1>
+      <p class="subtitle">
+        There are many variations of passages of Lorem Ipsum available
+      </p>
+      <div class="image-container">
+        <img src="image/apples-805124_1920.png" alt="a" class="fruit-image">
+      </div>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <h2 class="footer-logo">NINOM</h2>
+      <div class="footer-contact">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Passages of Lorem Ipsum available</span>
         </div>
-    </main>
-</head>
-</ul>
-<footer>
-  <div class="footer-container">
-    <h2 class="footer-logo">NINOM</h2>
-    <div class="footer-contact">
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Passages of Lorem Ipsum available</span>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+0123 456 7890</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>demo@gmail.com</span>
+        </div>
       </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <span>+0123 456 7890</span>
+
+      <div class="newsletter">
+        <input type="email" placeholder="Enter your email" />
+        <button>SUBSCRIBE</button>
       </div>
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <span>demo@gmail.com</span>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
+
+      <p class="copyright">
+        2018 All Rights Reserved. Design by Free Html Templates
+      </p>
     </div>
 
-    <div class="newsletter">
-      <input type="email" placeholder="Enter your email" />
-      <button>SUBSCRIBE</button>
-    </div>
-
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-
-    <p class="copyright">
-      2018 All Rights Reserved. Design by Free Html Templates
-    </p>
-  </div>
-  
-</footer>
-</div>
+  </footer>
 </body>
+
 </html>
