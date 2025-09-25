@@ -185,6 +185,7 @@ footer {
   color: #fff;
   cursor: pointer;
   border-radius: 0;
+  width: 275px;
 }
 
 .newsletter button:hover {
@@ -223,6 +224,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px;
+  background-color: white;
 }
 
 .content {
@@ -244,9 +246,10 @@ body {
 
 .subtitle {
   font-size: 20px;
-  color: #374151;
+  color: black;
   font-weight: 500;
   line-height: 1.6;
+  font-weight: bold;
 }
 
 .image-container {
@@ -261,13 +264,12 @@ body {
 }
 
 .buy-button {
-  background-color: #374151;
+  background-color: black;
   color: white;
   border: none;
   padding: 12px 32px;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   align-self: center;
@@ -529,14 +531,14 @@ body {
 }
 
 .read-more-btn {
-  background-color: #1f2937;
+  background-color: black;
   color: white;
   padding: 12px 32px;
   font-size: 16px;
   font-weight: 500;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
+  margin-left: 175px;
 }
 
 .copyright {
@@ -569,8 +571,6 @@ body {
 .testimonial-page-title {
   font-size: 48px;
   font-weight: 400;
-  color: #374151;
-  white-space: nowrap;
   margin-left: 230px;
 }
 
@@ -706,6 +706,7 @@ body {
 .callback-title {
   font-size: 40px;
   font-weight: 400;
+  margin-right: 175px;
 }
 
 .callback-content {
@@ -738,8 +739,6 @@ body {
   color: #666;
   background-color: #fff;
   border: none;
-  border-radius: 0;
-  outline: none;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
