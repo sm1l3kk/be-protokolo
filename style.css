@@ -18,6 +18,9 @@ body {
   position: relative;
   height: 320px;
   overflow: hidden;
+  position: relative;
+  height: 320px;
+  overflow: hidden;
 }
 
 .bg-image {
@@ -27,6 +30,16 @@ body {
   position: absolute;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.bg-image.active {
+  opacity: 1;
 }
 
 .bg-image.active {
@@ -158,6 +171,7 @@ footer {
 .contact-item i {
   font-size: 18px;
   color: #f7941e;
+  color: #f7941e;
 }
 
 .newsletter-container {
@@ -165,7 +179,18 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -181,6 +206,7 @@ footer {
   max-width: 80vw;
   font-size: 14px;
   border-radius: 0;
+  border-radius: 0;
 }
 
 .newsletter button {
@@ -190,6 +216,8 @@ footer {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
+  border-radius: 0;
+  width: 275px;
   border-radius: 0;
   width: 275px;
 }
@@ -207,8 +235,14 @@ footer {
 .social-icons img {
   width: 24px;
   height: 24px;
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
 }
 
+@media (max-width: 768px) {
+  .newsletter-container {
 @media (max-width: 768px) {
   .newsletter-container {
     flex-direction: column;
@@ -223,6 +257,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 16px;
+  background-color: white;
   background-color: white;
 }
 
@@ -246,8 +281,10 @@ footer {
 .subtitle {
   font-size: 20px;
   color: black;
+  color: black;
   font-weight: 500;
   line-height: 1.6;
+  font-weight: bold;
   font-weight: bold;
 }
 
@@ -264,8 +301,10 @@ footer {
 
 .buy-button {
   background-color: black;
+  background-color: black;
   color: white;
   border: none;
+  padding: 12px 32px;
   padding: 12px 32px;
   font-size: 18px;
   font-weight: 500;
@@ -444,16 +483,20 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
+  padding: 0 16px;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .main-content {
   padding: 32px 0;
+  padding: 32px 0;
 }
 
 .grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: center;
@@ -493,15 +536,19 @@ footer {
   justify-content: center;
   gap: 24px;
   padding: 0 32px;
+  gap: 24px;
+  padding: 0 32px;
 }
 
 .shape-container {
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .shape-element {
+  height: 150px;
   height: 150px;
   width: auto;
 }
@@ -515,18 +562,24 @@ footer {
 
 .description {
   font-size: 18px;
+  font-size: 18px;
   color: #4b5563;
   line-height: 1.6;
+  max-width: 448px;
   max-width: 448px;
 }
 
 .button-container {
   margin-top: 8px;
+  margin-top: 8px;
 }
 
 .read-more-btn {
   background-color: black;
+  background-color: black;
   color: white;
+  padding: 12px 32px;
+  font-size: 16px;
   padding: 12px 32px;
   font-size: 16px;
   font-weight: 500;
@@ -763,6 +816,60 @@ footer {
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #e67e22;
+}
+
+.map-section {
+  padding-left: 20px;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.embedded-map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .callback-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .form-section,
+  .map-section {
+    padding: 0;
+  }
+
+  .callback-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-line {
+    width: 80px;
+  }
+
+  .callback-title {
+    font-size: 2rem;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+}
   align-self: flex-start;
   margin-top: 20px;
 }
