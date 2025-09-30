@@ -179,6 +179,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
 .newsletter-container {
   display: flex;
   justify-content: center;
@@ -235,14 +236,8 @@ footer {
 .social-icons img {
   width: 24px;
   height: 24px;
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
 }
 
-@media (max-width: 768px) {
-  .newsletter-container {
 @media (max-width: 768px) {
   .newsletter-container {
     flex-direction: column;
@@ -869,9 +864,6 @@ footer {
   .map-container {
     height: 300px;
   }
-}
-  align-self: flex-start;
-  margin-top: 20px;
 }
 
 .submit-button:hover {
