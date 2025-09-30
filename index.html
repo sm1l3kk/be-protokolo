@@ -1,110 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
 </head>
-<body style="font-family: Arial, sans-serif; margin:16px; background:#f7f7f7;">
- <header class="header">
-      <div class="carousel">
-        <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
-        <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
-        <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
-        <div class="overlay"></div> 
+
+<body style="font-family: Arial, sans-serif; background:#f7f7f7;">
+  <header class="header">
+    <div class="carousel">
+      <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+      <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+      <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+      <div class="overlay"></div>
     </div>
     <script>
-        let currentIndex = 0;
-        const images = document.querySelectorAll('.bg-image');
+      let currentIndex = 0;
+      const images = document.querySelectorAll('.bg-image');
 
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].classList.add('active');
-        }
+      function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+      }
 
-        setInterval(showNextImage, 7000);
+      setInterval(showNextImage, 7000);
     </script>
-            <div class="title">
-                <h1>NINOM</h1>
-            </div>
-
-            <button class="arrow left">‹</button>
-            <button class="arrow right">›</button>
-        </div>
-
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Our Fruit</a>
-                    <a href="#">Testimonial</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Login</a>
-                </div>
-                <div class="search">
-                    <button>🔍</button>
-                </div>
-            </div>
-        </nav>
+    <div class="title">
+      <h1>NINOM</h1>
     </div>
- </header>
+
+    <button class="arrow left">‹</button>
+    <button class="arrow right">›</button>
+  </header>
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="fruit.html">Our Fruit</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="call.html">Contact Us</a>
+        <a href="#">Login</a>
+      </div>
+      <div class="search">
+        <button><img src="icons/ss.png" alt="a"></button>
+      </div>
+    </div>
+  </nav>
   <main class="container">
-        <div class="content">
-            <h1 class="main-title">FRUIT SHOP</h1>
-            <p class="subtitle">
-                There are many variations of passages of Lorem Ipsum available
-            </p>
-            <div class="image-container">
-                <img 
-                    src="image/apples-805124_1920.png" 
-                    alt="a"
-                    class="fruit-image"
-                >
-            </div>
-            <button class="buy-button">Buy Now</button>
+    <div class="content">
+      <h1 class="main-title">FRUIT SHOP</h1>
+      <p class="subtitle">
+        There are many variations of passages of Lorem Ipsum available
+      </p>
+      <div class="image-container">
+        <img src="image/apples-805124_1920.png" alt="a" class="fruit-image">
+      </div>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <h2 class="footer-logo">NIMOM</h2>
+      <div class="footer-contact">
+        <div class="contact-item">
+          <img src="icons/  (1).png" class="fas fa-map-marker-alt">
+          <span>Passages of Lorem Ipsum available</span>
         </div>
-    </main>
-</head>
-</ul>
-<footer>
-  <div class="footer-container">
-    <h2 class="footer-logo">NINOM</h2>
-    <div class="footer-contact">
-      <div class="contact-item">
-        <img src="icons/  (1).png" class="fas fa-map-marker-alt">
-        <span>Passages of Lorem Ipsum available</span>
+        <div class="contact-item">
+          <img src="icons/sa.png" class="fas fa-phone">
+          <span>+0123 456 7890</span>
+        </div>
+        <div class="contact-item">
+          <img src="icons/123.png" class="fas fa-envelope">
+          <span>demo@gmail.com</span>
+        </div>
       </div>
-      <div class="contact-item">
-        <img src="icons/sa.png" class="fas fa-phone">
-        <span>+0123 456 7890</span>
-      </div>
-      <div class="contact-item">
-        <img src="icons/123.png" class="fas fa-envelope">
-        <span>demo@gmail.com</span>
+
+      <div class="newsletter-container">
+        <div class="newsletter">
+          <input type="email" class="input" placeholder="Enter your email" />
+          <button>SUBSCRIBE</button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><img src="icons/facebook-logo-button (1).png" class="fab fa-facebook-f"></a>
+          <a href="#"><img src="icons/twitter-logo-button.png" class="fab fa-twitter"></a>
+          <a href="#"><img src="icons/linkedin (1).png" class="fab fa-linkedin-in"></a>
+          <a href="#"><img src="icons/instagram.png" class="fab fa-instagram"></a>
+        </div>
       </div>
     </div>
-
-    <div class="newsletter">
-      <input type="email" class="input" placeholder="Enter your email" />
-      <button>SUBSCRIBE</button>
-    </div>
-
-    <div class="social-icons">
-      <a href="#"><img src="icons/facebook-logo-button (1).png" class="fab fa-facebook-f"></a>
-      <a href="#"><img src="icons/twitter-logo-button.png" class="fab fa-twitter"></a>
-      <a href="#"><img src="icons/linkedin (1).png" class="fab fa-linkedin-in"></a>
-      <a href="#"><img src="icons/instagram.png" class="fab fa-instagram"></a>
-    </div>
-
-    <p class="copyright">
-      2018 All Rights Reserved. Design by Free Html Templates
-    </p>
+  </footer>
+  <div class="copyright">
+    &COPY 2019 All Rights Reserved. Design by Free Html Templates
   </div>
-</footer>
-</div>
 </body>
+
 </html>

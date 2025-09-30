@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="carousel">
+            <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+            <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+            <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+            <div class="overlay"></div>
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.bg-image');
+
+            function showNextImage() {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }
+
+            setInterval(showNextImage, 7000);
+        </script>
+        <div class="title">
+            <h1>NINOM</h1>
+        </div>
+
+        <button class="arrow left">‹</button>
+        <button class="arrow right">›</button>
+
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="fruit.html">Our Fruit</a>
+                    <a href="testimonial.html">Testimonial</a>
+                    <a href="call.html">Contact Us</a>
+                    <a href="#">Login</a>
+                </div>
+                <div class="search">
+                    <button><img src="icons/ss.png" alt="a"></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="callback-container">
+        <div class="callback-header">
+            <div class="header-line"></div>
+            <h1 class="callback-title">Request A call back</h1>
+        </div>
+
+        <div class="callback-content">
+            <div class="form-section">
+                <form class="callback-form">
+                    <div class="input-group">
+                        <input type="text" class="form-input" placeholder="FULL NAME" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" class="form-input" placeholder="EMAIL" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" class="form-input" placeholder="PHONE NUMBER" required>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea class="form-textarea" placeholder="MESSAGE" rows="6"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">SEND</button>
+                </form>
+            </div>
+
+            <div class="map-section">
+                <div class="map-container">
+                    <iframe class="embedded-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuMiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <h2 class="footer-logo">NIMOM</h2>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <img src="icons/  (1).png" class="fas fa-map-marker-alt">
+                    <span>Passages of Lorem Ipsum available</span>
+                </div>
+                <div class="contact-item">
+                    <img src="icons/sa.png" class="fas fa-phone">
+                    <span>+0123 456 7890</span>
+                </div>
+                <div class="contact-item">
+                    <img src="icons/123.png" class="fas fa-envelope">
+                    <span>demo@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="newsletter-container">
+                <div class="newsletter">
+                    <input type="email" class="input" placeholder="Enter your email" />
+                    <button>SUBSCRIBE</button>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><img src="icons/facebook-logo-button (1).png" class="fab fa-facebook-f"></a>
+                    <a href="#"><img src="icons/twitter-logo-button.png" class="fab fa-twitter"></a>
+                    <a href="#"><img src="icons/linkedin (1).png" class="fab fa-linkedin-in"></a>
+                    <a href="#"><img src="icons/instagram.png" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        &COPY 2019 All Rights Reserved. Design by Free Html Templates
+    </div>
+</body>
+
+</html>
