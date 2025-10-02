@@ -1,156 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="carousel">
-            <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
-            <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
-            <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
-            <div class="overlay"></div>
+      <div class="carousel">
+        <img  src="./image/brooke-lark-3A1etBW5cBk-unsplash.png"  alt="a"  class="bg-image active"/>
+        <img src="./image/OIP (1).jpg" alt="a" class="bg-image" />
+        <img  src="./image/tropical-fruits-mango-papaya-orange-background.jpg"  alt="a"  class="bg-image"/>
+        <div class="overlay"></div>
+      </div>
+      <button class="arrow left">‹</button>
+      <button class="arrow right">›</button>
+
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".bg-image");
+
+        function showNextImage() {
+          images[currentIndex].classList.remove("active");
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add("active");
+        }
+
+        function showPreviousImage() {
+          images[currentIndex].classList.remove("active");
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          images[currentIndex].classList.add("active");
+        }
+        setInterval(showNextImage, 7000);
+
+        document.querySelector('.arrow.right').addEventListener('click', showNextImage);
+        document.querySelector('.arrow.left').addEventListener('click', showPreviousImage);
+      </script>
+      <div class="title">
+        <h1>NINOM</h1>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="fruit.html">Our Fruit</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="call.html">Contact Us</a>
+            <a href="#">Login</a>
+          </div>
+          <div class="search">
+            <button><img src="icons/ss.png" alt="a" /></button>
+          </div>
         </div>
-        <button class="arrow left">‹</button>
-        <button class="arrow right">›</button>
-
-  <script>
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.bg-image');
-
-    function showNextImage() {
-      images[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % images.length;
-      images[currentIndex].classList.add('active');
-    }
-
-    function showPreviousImage() {
-      images[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      images[currentIndex].classList.add('active');
-    }
-    setInterval(showNextImage, 7000);
-
-    document.querySelector('.arrow.right').addEventListener('click', showNextImage);
-    document.querySelector('.arrow.left').addEventListener('click', showPreviousImage);
-  </script>
-        <div class="title">
-            <h1>NINOM</h1>
-        </div>
-
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="fruit.html">Our Fruit</a>
-                    <a href="testimonial.html">Testimonial</a>
-                    <a href="call.html">Contact Us</a>
-                    <a href="#">Login</a>
-                </div>
-                <div class="search">
-                    <button><img src="icons/ss.png" alt="a"></button>
-                </div>
-            </div>
-        </nav>
+      </nav>
     </header>
 
     <div class="fresh-fruit-container">
-
-        <div class="fresh-fruit-title-section">
-            <h1>Fresh Fruit</h1>
-        </div>
-        <div class="fresh-fruit-gallery-grid">
-            <div class="fresh-fruit-card orange-special">
-                <img src="image/Screenshot 2025-09-16 095305.png" alt="Fresh Oranges">
-                <div class="fresh-fruit-hover-overlay">
-                    <h2>Orange</h2>
-                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
-                </div>
-            </div>
-
-            <div class="fresh-fruit-card">
-                <img src="image/Screenshot 2025-09-16 094656.png" alt="Fresh Blueberries">
-                <div class="fresh-fruit-hover-overlay">
-                    <h2>Blueberry</h2>
-                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
-                </div>
-            </div>
-
-            <div class="fresh-fruit-card">
-                <img src="image/Screenshot 2025-09-16 094722.png" alt="Fresh Bananas">
-                <div class="fresh-fruit-hover-overlay">
-                    <h2>Banana</h2>
-                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
-                </div>
-            </div>
-
-            <div class="fresh-fruit-card">
-                <img src="image/Screenshot 2025-09-16 094735.png" alt="Fresh Apples">
-                <div class="fresh-fruit-hover-overlay">
-                    <h2>Apple</h2>
-                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
-                </div>
-            </div>
-
-            <div class="fresh-fruit-card">
-                <img src="image/Screenshot 2025-09-16 094815.png" alt="Fresh Mangoes">
-                <div class="fresh-fruit-hover-overlay">
-                    <h2>Mango</h2>
-                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
-                </div>
-            </div>
-
-            <div class="fresh-fruit-card">
-                <img src="image/Screenshot 2025-09-16 094825.png" alt="Fresh Strawberries">
-                <div class="fresh-fruit-hover-overlay">
-                    <h2>Strawberry</h2>
-                    <button class="fresh-fruit-purchase-btn">Buy Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-  <footer>
-    <div class="footer-container">
-      <h2 class="footer-logo">NIMOM</h2>
-      <div class="footer-contact">
-        <div class="contact-item">
-          <img src="icons/  (1).png">
-          <span>Passages of Lorem Ipsum available</span>
-        </div>
-        <div class="contact-item">
-          <img src="icons/sa.png">
-          <span>+0123 456 7890</span>
-        </div>
-        <div class="contact-item">
-          <img src="icons/123.png">
-          <span>demo@gmail.com</span>
-        </div>
+      <div class="fresh-fruit-title-section">
+        <h1>Fresh Fruit</h1>
       </div>
-
-      <div class="newsletter-container">
-        <div class="newsletter">
-          <input type="email" class="input" placeholder="Enter your email" />
-          <button>SUBSCRIBE</button>
+      <div class="fresh-fruit-gallery-grid">
+        <div class="fresh-fruit-card orange-special">
+          <img  src="image/Screenshot 2025-09-16 095305.png"  alt="a"/>
+          <div class="fresh-fruit-hover-overlay">
+            <h2>Orange</h2>
+            <button class="fresh-fruit-purchase-btn">Buy Now</button>
+          </div>
         </div>
 
-        <div class="social-icons">
-          <a href="#"><img src="icons/facebook-logo-button (1).png"></a>
-          <a href="#"><img src="icons/twitter-logo-button.png"></a>
-          <a href="#"><img src="icons/linkedin (1).png"></a>
-          <a href="#"><img src="icons/instagram.png"></a>
+        <div class="fresh-fruit-card">
+          <img  src="image/Screenshot 2025-09-16 094656.png"  alt="a"/>
+          <div class="fresh-fruit-hover-overlay">
+            <h2>Blueberry</h2>
+            <button class="fresh-fruit-purchase-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="fresh-fruit-card">
+          <img  src="image/Screenshot 2025-09-16 094722.png"  alt="a"/>
+          <div class="fresh-fruit-hover-overlay">
+            <h2>Banana</h2>
+            <button class="fresh-fruit-purchase-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="fresh-fruit-card">
+          <img src="image/Screenshot 2025-09-16 094735.png"  alt="a"/>
+          <div class="fresh-fruit-hover-overlay">
+            <h2>Apple</h2>
+            <button class="fresh-fruit-purchase-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="fresh-fruit-card">
+          <img  src="image/Screenshot 2025-09-16 094815.png"  alt="a"/>
+          <div class="fresh-fruit-hover-overlay">
+            <h2>Mango</h2>
+            <button class="fresh-fruit-purchase-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="fresh-fruit-card">
+          <img  src="image/Screenshot 2025-09-16 094825.png"  alt="a"/>
+          <div class="fresh-fruit-hover-overlay">
+            <h2>Strawberry</h2>
+            <button class="fresh-fruit-purchase-btn">Buy Now</button>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+    <footer>
+      <div class="footer-container">
+        <h2 class="footer-logo">NINOM</h2>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <img src="icons/  (1).png" />
+            <span>Passages of Lorem Ipsum available</span>
+          </div>
+          <div class="contact-item">
+            <img src="icons/sa.png" />
+            <span>+0123 456 7890</span>
+          </div>
+          <div class="contact-item">
+            <img src="icons/123.png" />
+            <span>demo@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="newsletter-container">
+          <div class="newsletter">
+            <input type="email" class="input" placeholder="Enter your email" />
+            <button>SUBSCRIBE</button>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook-logo-button (1).png" /></a>
+            <a href="#"><img src="icons/twitter-logo-button.png" /></a>
+            <a href="#"><img src="icons/linkedin (1).png" /></a>
+            <a href="#"><img src="icons/instagram.png" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="copyright">
-        &COPY 2019 All Rights Reserved. Design by Free Html Templates
+      &COPY 2019 All Rights Reserved. Design by Free Html Templates
     </div>
-</body>
-
+  </body>
 </html>
