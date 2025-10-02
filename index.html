@@ -9,32 +9,43 @@
   <link rel="stylesheet" href="script.js">
 </head>
 <body>
-  <header class="header">
-    <div class="carousel">
-      <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
-      <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
-      <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
-      <div class="overlay"></div>
-    </div>
-    <script>
-      let currentIndex = 0;
-      const images = document.querySelectorAll('.bg-image');
+<header class="header">
+  <div class="carousel">
+    <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
+    <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
+    <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
+    <div class="overlay"></div>
+  </div>
 
-      function showNextImage() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-      }
+  <div class="title">
+    <h1>NINOM</h1>
+  </div>
 
-      setInterval(showNextImage, 7000);
-    </script>
-    <div class="title">
-      <h1>NINOM</h1>
-    </div>
+  <button class="arrow left">‹</button>
+  <button class="arrow right">›</button>
 
-    <button class="arrow left">‹</button>
-    <button class="arrow right">›</button>
-  </header>
+  <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.bg-image');
+
+    function showNextImage() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+    }
+
+    function showPreviousImage() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      images[currentIndex].classList.add('active');
+    }
+    setInterval(showNextImage, 7000);
+
+    document.querySelector('.arrow.right').addEventListener('click', showNextImage);
+    document.querySelector('.arrow.left').addEventListener('click', showPreviousImage);
+  </script>
+</header>
+
   <nav class="nav">
     <div class="nav-container">
       <div class="nav-links">
