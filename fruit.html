@@ -16,24 +16,32 @@
             <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
             <div class="overlay"></div>
         </div>
-        <script>
-            let currentIndex = 0;
-            const images = document.querySelectorAll('.bg-image');
+        <button class="arrow left">‹</button>
+        <button class="arrow right">›</button>
 
-            function showNextImage() {
-                images[currentIndex].classList.remove('active');
-                currentIndex = (currentIndex + 1) % images.length;
-                images[currentIndex].classList.add('active');
-            }
+  <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.bg-image');
 
-            setInterval(showNextImage, 7000);
-        </script>
+    function showNextImage() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+    }
+
+    function showPreviousImage() {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      images[currentIndex].classList.add('active');
+    }
+    setInterval(showNextImage, 7000);
+
+    document.querySelector('.arrow.right').addEventListener('click', showNextImage);
+    document.querySelector('.arrow.left').addEventListener('click', showPreviousImage);
+  </script>
         <div class="title">
             <h1>NINOM</h1>
         </div>
-
-        <button class="arrow left">‹</button>
-        <button class="arrow right">›</button>
 
         <nav class="nav">
             <div class="nav-container">
