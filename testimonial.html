@@ -1,181 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="carousel">
-            <img src="./image/brooke-lark-3A1etBW5cBk-unsplash.png" alt="a" class="bg-image active">
-            <img src="./image/OIP (1).jpg" alt="a" class="bg-image">
-            <img src="./image/tropical-fruits-mango-papaya-orange-background.jpg" alt="a" class="bg-image">
-            <div class="overlay"></div>
-        </div>
-        <button class="arrow left">‹</button>
-        <button class="arrow right">›</button>
-  <script>
-    let currentIndex = 0;
-    const images = document.querySelectorAll('.bg-image');
+      <div class="carousel">
+        <img  src="./image/brooke-lark-3A1etBW5cBk-unsplash.png"  alt="a"  class="bg-image active"/>
+        <img src="./image/OIP (1).jpg" alt="a" class="bg-image" />
+        <img  src="./image/tropical-fruits-mango-papaya-orange-background.jpg"  alt="a"  class="bg-image"/>
+        <div class="overlay"></div>
+      </div>
+      <button class="arrow left">‹</button>
+      <button class="arrow right">›</button>
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".bg-image");
 
-    function showNextImage() {
-      images[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % images.length;
-      images[currentIndex].classList.add('active');
-    }
+        function showNextImage() {
+          images[currentIndex].classList.remove("active");
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add("active");
+        }
 
-    function showPreviousImage() {
-      images[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      images[currentIndex].classList.add('active');
-    }
-    setInterval(showNextImage, 7000);
+        function showPreviousImage() {
+          images[currentIndex].classList.remove("active");
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          images[currentIndex].classList.add("active");
+        }
+        setInterval(showNextImage, 7000);
 
-    document.querySelector('.arrow.right').addEventListener('click', showNextImage);
-    document.querySelector('.arrow.left').addEventListener('click', showPreviousImage);
-  </script>
-        <div class="title">
-            <h1>NINOM</h1>
-        </div>
-
-
+        document
+          .querySelector(".arrow.right")
+          .addEventListener("click", showNextImage);
+        document
+          .querySelector(".arrow.left")
+          .addEventListener("click", showPreviousImage);
+      </script>
+      <div class="title">
+        <h1>NINOM</h1>
+      </div>
     </header>
     <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="fruit.html">Our Fruit</a>
-                <a href="testimonial.html">Testimonial</a>
-                <a href="call.html">Contact Us</a>
-                <a href="#">Login</a>
-            </div>
-            <div class="search">
-                <button><img src="icons/ss.png" alt="a"></button>
-            </div>
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="fruit.html">Our Fruit</a>
+          <a href="testimonial.html">Testimonial</a>
+          <a href="call.html">Contact Us</a>
+          <a href="#">Login</a>
         </div>
+        <div class="search">
+          <button><img src="icons/ss.png" alt="a" /></button>
+        </div>
+      </div>
     </nav>
 
     <div class="testimonial-page-container">
-        <div class="testimonial-page-content">
-            <div class="testimonial-page-header">
-                <h1 class="testimonial-page-title">What Syas Cutomer</h1>
-                <div class="testimonial-page-line"></div>
-            </div>
-            <div class="testimonial-section-wrapper">
-                <div class="testimonial-image-container">
-                    <button class="testimonial-nav-btn testimonial-left-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <polyline points="15,18 9,12 15,6"></polyline>
-                        </svg>
-                    </button>
-
-                    <img src="image/image.png" alt="a" class="testimonial-profile-image">
-
-                    <button class="testimonial-nav-btn testimonial-right-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <polyline points="9,18 15,12 9,6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-
-                <h3 class="testimonial-customer-name">Jone Mark</h3>
-
-                <div class="testimonial-quote-container">
-                    <span class="testimonial-quote-mark testimonial-left-quote">"</span>
-                    <p class="testimonial-quote-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut
-                        aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    </p>
-                    <span class="testimonial-quote-mark testimonial-right-quote">"</span>
-                </div>
-            </div>
+      <div class="testimonial-page-content">
+        <div class="testimonial-page-header">
+          <h1 class="testimonial-page-title">What Syas Cutomer</h1>
+          <div class="testimonial-page-line"></div>
         </div>
+        <div class="testimonial-section-wrapper">
+          <div class="testimonial-image-container">
+            <button class="testimonial-nav-btn testimonial-left-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15,18 9,12 15,6"></polyline>
+              </svg>
+            </button>
+
+            <img
+              src="image/image.png"
+              alt="a"
+              class="testimonial-profile-image"
+            />
+
+            <button class="testimonial-nav-btn testimonial-right-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9,18 15,12 9,6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <h3 class="testimonial-customer-name">Jone Mark</h3>
+
+          <div class="testimonial-quote-container">
+            <span class="testimonial-quote-mark testimonial-left-quote">"</span>
+            <p class="testimonial-quote-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse
+            </p>
+            <span class="testimonial-quote-mark testimonial-right-quote"
+              >"</span
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <script>
-  const testimonials = [
-    {
-      name: "Jone Mark",
-      image: "image/image.png",
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex e commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse "
-    },
-    {
-      name: "Sarah Lee",
-      image: "image/sarah.png",
-      quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus libero ea aut eveniet officiis, iure nisi ex dignissimos sint omnis quibusdam quo, molestiae excepturi? Nulla nesciunt expedita quae accusamus quos!"
-    }
-  ];
+      const testimonials = [
+        {
+          name: "Jone Mark",
+          image: "image/image.png",
+          quote:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex e commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse ",
+        },
+        {
+          name: "Sarah Lee",
+          image: "image/sarah.png",
+          quote:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus libero ea aut eveniet officiis, iure nisi ex dignissimos sint omnis quibusdam quo, molestiae excepturi? Nulla nesciunt expedita quae accusamus quos!",
+        },
+      ];
 
-  let currentIndex1 = 0;
+      let currentIndex1 = 0;
 
-  const profileImage = document.querySelector('.testimonial-profile-image');
-  const customerName = document.querySelector('.testimonial-customer-name');
-  const quoteText = document.querySelector('.testimonial-quote-text');
+      const profileImage = document.querySelector(".testimonial-profile-image");
+      const customerName = document.querySelector(".testimonial-customer-name");
+      const quoteText = document.querySelector(".testimonial-quote-text");
 
-  const leftBtn = document.querySelector('.testimonial-left-btn');
-  const rightBtn = document.querySelector('.testimonial-right-btn');
+      const leftBtn = document.querySelector(".testimonial-left-btn");
+      const rightBtn = document.querySelector(".testimonial-right-btn");
 
-  function updateTestimonial(index) {
-    const testimonial = testimonials[index];
-    profileImage.src = testimonial.image;
-    customerName.textContent = testimonial.name;
-    quoteText.textContent = testimonial.quote;
-  }
+      function updateTestimonial(index) {
+        const testimonial = testimonials[index];
+        profileImage.src = testimonial.image;
+        customerName.textContent = testimonial.name;
+        quoteText.textContent = testimonial.quote;
+      }
 
-  rightBtn.addEventListener('click', () => {
-    currentIndex1 = (currentIndex1 + 1) % testimonials.length;
-    updateTestimonial(currentIndex1);
-  });
+      rightBtn.addEventListener("click", () => {
+        currentIndex1 = (currentIndex1 + 1) % testimonials.length;
+        updateTestimonial(currentIndex1);
+      });
 
-  leftBtn.addEventListener('click', () => {
-    currentIndex1 = (currentIndex1 - 1 + testimonials.length) % testimonials.length;
-    updateTestimonial(currentIndex1);
-  });
-</script>
-  <footer>
-    <div class="footer-container">
-      <h2 class="footer-logo">NIMOM</h2>
-      <div class="footer-contact">
-        <div class="contact-item">
-          <img src="icons/  (1).png">
-          <span>Passages of Lorem Ipsum available</span>
+      leftBtn.addEventListener("click", () => {
+        currentIndex1 =
+          (currentIndex1 - 1 + testimonials.length) % testimonials.length;
+        updateTestimonial(currentIndex1);
+      });
+    </script>
+    <footer>
+      <div class="footer-container">
+        <h2 class="footer-logo">NIMOM</h2>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <img src="icons/  (1).png" />
+            <span>Passages of Lorem Ipsum available</span>
+          </div>
+          <div class="contact-item">
+            <img src="icons/sa.png" />
+            <span>+0123 456 7890</span>
+          </div>
+          <div class="contact-item">
+            <img src="icons/123.png" />
+            <span>demo@gmail.com</span>
+          </div>
         </div>
-        <div class="contact-item">
-          <img src="icons/sa.png">
-          <span>+0123 456 7890</span>
-        </div>
-        <div class="contact-item">
-          <img src="icons/123.png">
-          <span>demo@gmail.com</span>
+
+        <div class="newsletter-container">
+          <div class="newsletter">
+            <input type="email" class="input" placeholder="Enter your email" />
+            <button>SUBSCRIBE</button>
+          </div>
+
+          <div class="social-icons">
+            <a href="#"><img src="icons/facebook-logo-button (1).png" /></a>
+            <a href="#"><img src="icons/twitter-logo-button.png" /></a>
+            <a href="#"><img src="icons/linkedin (1).png" /></a>
+            <a href="#"><img src="icons/instagram.png" /></a>
+          </div>
         </div>
       </div>
-
-      <div class="newsletter-container">
-        <div class="newsletter">
-          <input type="email" class="input" placeholder="Enter your email" />
-          <button>SUBSCRIBE</button>
-        </div>
-
-        <div class="social-icons">
-          <a href="#"><img src="icons/facebook-logo-button (1).png"></a>
-          <a href="#"><img src="icons/twitter-logo-button.png"></a>
-          <a href="#"><img src="icons/linkedin (1).png"></a>
-          <a href="#"><img src="icons/instagram.png"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
     <div class="copyright">
-        &COPY 2019 All Rights Reserved. Design by Free Html Templates
+      &COPY 2019 All Rights Reserved. Design by Free Html Templates
     </div>
-</body>
+  </body>
 </html>
