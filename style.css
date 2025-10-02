@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: white;
+  color: black;
+}
+
 .header {
   position: relative;
 }
@@ -210,13 +216,6 @@ footer {
   }
 }
 
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: white;
-  color: black;
-}
-
 .container {
   min-height: 800px;
   display: flex;
@@ -233,7 +232,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 }
 
 .main-title {
@@ -474,7 +473,7 @@ body {
 .shadow-element {
   position: absolute;
   bottom: 18px;
-  right: 16px;
+  right: 40px;
   width: 100%;
   height: 100%;
   z-index: 1;
